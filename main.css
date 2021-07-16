@@ -1,0 +1,109 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        /* justify-content: center; */
+        flex: 1 46%;
+        flex-basis: auto;
+    }
+    .card {
+        flex-grow: 1;
+        justify-content: center;
+        margin: auto;
+    }
+    .image {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flex {
+        flex-basis: auto;
+    }
+    .image {
+        max-height: 300px;
+    }
+}
+
+body {
+    background-color: rgb(105, 138, 122);
+
+}
+
+h1 {
+    text-align: center;
+    font: bolder 100px 'Raleway', sans-serif;
+    text-shadow: 2px 2px 4px rgb(219, 240, 198);
+}
+
+.card {
+    margin: 10px;
+    box-shadow: 4px 4px 10px rgb(200, 211, 200);
+    border: solid 1px rgb(85, 97, 85);
+    padding-left: 0%;
+    padding-right: 0%;
+    font-family: 'Raleway', sans-serif;
+    flex-basis: 28%;
+    flex-grow: 1;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(85, 97, 85);
+    text-shadow: 2px 2px 4px rgb(157, 172, 163);
+}
+
+.image {
+    height: 400px;
+}
+
+img {
+    max-height: 400px;
+    align-items: baseline;
+}
+
+.card-description{
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.available {
+    text-align: center;
+    font: 20px bold 'Raleway', sans-serif;
+    color: red;
+    background-color: rgb(235, 203, 203);
+    /* margin-left: 0px;
+    margin-right: 0px; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.specifications {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.specifications footer {
+    font-size: x-small;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.pricing {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.pricing p {
+    margin-top: 1px;
+    margin-bottom: 0px;
+
+}
